@@ -77,7 +77,6 @@
 
     $("tbody").on('click', '#delete-button', function () {
         const id = $(this).data('id');
-        console.log(id);
         $.post('/home/deleteperson', { id }, function () {
             refreshTable();
         });
