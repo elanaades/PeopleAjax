@@ -76,7 +76,6 @@
     });
 
     $("tbody").on('click', '#delete-button', function () {
-        console.log("delete working...")
         const id = $(this).data('id');
         console.log(id);
         $.post('/home/deleteperson', { id }, function () {
